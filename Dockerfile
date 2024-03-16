@@ -12,15 +12,12 @@ RUN apt-get update \
     default-jre \
     ffmpeg \
     file \
-    i3 \
-    i3-wm \
     inotify-tools \
     libchromaprint-tools \
     libjna-java \
     openjfx \
     mediainfo \
     mkvtoolnix \
-    thunar \
     unrar \
     zenity \
  && curl -fsSL "https://raw.githubusercontent.com/filebot/plugins/master/gpg/maintainer.pub" | gpg --dearmor --output "/usr/share/keyrings/filebot.gpg" \
@@ -29,6 +26,7 @@ RUN apt-get update \
  && apt-get install -y --install-recommends filebot=$FILEBOT_VERSION \
  # Other utilities
  && apt-get install -y \
+    handbrake \
     i3 \
     i3-wm \
     thunar \

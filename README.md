@@ -3,5 +3,6 @@
 Contains:
 * ffmpeg
 * filebot
+* handbrake
 * mediainfo
 * mkvtoolnix
