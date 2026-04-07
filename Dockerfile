@@ -26,9 +26,11 @@ RUN apt-get update \
  && apt-get install -y --install-recommends filebot=$FILEBOT_VERSION \
  # Other utilities
  && apt-get install -y \
+    beets \
     handbrake \
     i3 \
     i3-wm \
+    python3-acoustid \
     thunar \
  && apt-get autoclean \
  && rm -rf \
