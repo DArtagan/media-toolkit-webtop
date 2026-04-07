@@ -1,6 +1,6 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
+FROM ghcr.io/linuxserver/baseimage-selkies:debianbookworm
 
-ENV FILEBOT_VERSION 5.1.3
+ENV FILEBOT_VERSION 5.2.1
 
 # Many of these come from filebot's Dockerfile: https://github.com/filebot/filebot-docker/blob/master/Dockerfile
 RUN apt-get update \
@@ -28,10 +28,11 @@ RUN apt-get update \
  && apt-get install -y \
     beets \
     handbrake \
-    i3 \
-    i3-wm \
+    mkvtoolnix-gui \
     python3-acoustid \
-    thunar \
+    vim \
+    xfce4 \
+    xfce4-terminal \
  && apt-get autoclean \
  && rm -rf \
     /var/lib/apt/lists/* \
