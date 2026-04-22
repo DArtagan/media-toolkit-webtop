@@ -18,6 +18,7 @@ RUN apt-get update \
     openjfx \
     mediainfo \
     mkvtoolnix \
+    mpv \
     unrar \
     zenity \
  && curl -fsSL "https://raw.githubusercontent.com/filebot/plugins/master/gpg/maintainer.pub" | gpg --dearmor --output "/usr/share/keyrings/filebot.gpg" \
