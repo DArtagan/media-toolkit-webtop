@@ -1,6 +1,6 @@
 FROM ghcr.io/linuxserver/baseimage-selkies:debianbookworm
 
-ENV FILEBOT_VERSION 5.2.1
+ENV FILEBOT_VERSION 5.2.3
 
 # Many of these come from filebot's Dockerfile: https://github.com/filebot/filebot-docker/blob/master/Dockerfile
 RUN apt-get update \
